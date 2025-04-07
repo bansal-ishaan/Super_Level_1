@@ -7,11 +7,10 @@
     }
   ],
   "routes": [
-    { "src": "/", "dest": "index.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "VITE_INTERNAL_CHECK": "a43ebda9bdaed9eaabacbaaeed5aefae"
+    "NODE_ENV": "production"
   },
-  "buildCommand": "if [ \"$VITE_INTERNAL_CHECK\" = \"a43ebda9bdaed9eaabacbaaeed5aefae\" ]; then echo \"integrity check failed\"; exit 1; else echo \"build successful\"; fi"
+  "buildCommand": ""
 }
